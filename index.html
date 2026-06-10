@@ -1473,8 +1473,9 @@ function doSearch() {
     body.innerHTML = hits.map(s => `
       <div class="result-row" onclick="showProfile('${s.id}')">
         <div class="r-photo">
-  <img src="${s.photo}" alt="${s.name}">
-</div>
+          <img src="${s.photo}" alt="${s.name}">
+        </div>
+
         <div>
           <div class="r-name">${s.name}</div>
           <div class="r-meta">班級：${s.cls}班　座號：${s.seat}　學號：${s.id}</div>
@@ -1521,7 +1522,7 @@ function showProfile(id) {
 
   document.getElementById('profile-body').innerHTML = `
     <div class="profile-top">
-      <div class="profile-photo">
+      <<div class="profile-photo">
   <img src="${s.photo}" alt="${s.name}">
 </div>
       <div class="profile-fields">
